@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>header</title>
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container navbar">
+          <div class="navbar__item">
+            <a href="./index.html"> <img src="./navbar_images/Logo.svg" alt="" class="navbar__img" /></a>
+           
+
+            <ul class="navbar__item__blok " id="navbar_nav">
+              <li class="navbar__item__blok__list">
+                <a href="./blog_inner.html" class="navbar__item__blok__list__link"
+                  >Blog inner</a
+                >
+              </li>
+              <li class="navbar__item__blok__list">
+                <a href="./menu.html" class="navbar__item__blok__list__link"
+                  >Menu</a
+                >
+              </li>
+              <li class="navbar__item__blok__list">
+                <a href="./about.html" class="navbar__item__blok__list__link"
+                  >About us</a
+                >
+              </li>
+              <li class="navbar__item__blok__list">
+                <a
+                  href="./our_story.html"
+                  class="navbar__item__blok__list__link"
+                  >Our Story</a
+                >
+              </li>
+              <li class="navbar__item__blok__list">
+                <a href="./blog.html" class="navbar__item__blok__list__link"
+                  >Blog</a
+                >
+              </li>
+              <li class="navbar__item__blok__list">
+                <a href="./contact.html" class="navbar__item__blok__list__link"
+                  >Contact</a
+                >
+              </li>
+
+              <button class="navbar__item__blok_close" onclick="closeNavbar()"><i class="fa-solid fa-xmark"></i></button>
+            </ul>
+          </div>
+
+          <div class="navbar__top">
+            <a href="#" class="navbar__top__btn"
+              ><img
+                src="./navbar_images/Clone.svg"
+                alt=""
+                class="navbar__item__btn__img"
+            /></a>
+          </div>
+
+          <button class="hamburger" onclick="openNavbar()">
+            <i class="fa-solid fa-bars"></i>
+          </button> 
+        </div>
+      </nav>
+    </header>
+    <main>
+    </main>
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.getElementById("navbar").className = "nav-shrink";
+        } else {
+          document.getElementById("navbar").className = "";
+        }
+      }
+
+      function openNavbar() {
+        document.getElementById("navbar_nav").style.left = "0"
+      }
+      function closeNavbar() {
+        document.getElementById("navbar_nav").style.left = "-100%"
+      }
+    </script>
+  </body>
+</html>

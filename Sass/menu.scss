@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap");
+// font-family: 'Playfair Display', serif;
+$font-display: "Playfair Display";
+
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    background: rgba(31, 29, 33, 1);
+}
+main{
+    padding-top: 96px;
+}
+.container {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+.home__menu__title {
+    padding: 96px 71px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .title__main__text__left {
+        color: white;
+        font-family: $font-display;
+        .border__main__right__word {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        span {
+            height: 1px;
+            width: 50px;
+            background-color: #ffffff;
+        }
+        h3 {
+            font-weight: 400;
+            font-size: 16px;
+            color: #ffb577;
+        }
+        h1 {
+            padding-top: 24px;
+            font-family: $font-display;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 56px;
+        }
+    }
+ 
+    .title__main__text__right {
+        width: 499px;
+
+        p {
+            padding-top: 40px;
+            font-family: $font-display;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #b8b8b8;
+        }
+    }
+}   .card__about:hover{
+        p:hover{
+            color: gold;
+        }
+    }
+.content__card {
+    padding-top: 144px;
+    .card__home__card {
+        padding: 0 71px;
+    }
+    .home__card__link {
+        gap: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 16px;
+        font-family: $font-display;
+        text-transform: capitalize;
+        .active--link {
+            color: white;
+            opacity: 1;
+        }
+        a {
+            font-size: 18px;
+            line-height: 30px;
+            color: #ffffff;
+            opacity: 0.6;
+        }
+        a:hover {
+            opacity: 1;
+        }
+    }
+}
+.card__home {
+    margin-top: 64px;
+}
+.card__box__flex {
+    padding-top: 25px;
+    display: flex;
+    gap: 25px;
+    .card__box {
+        overflow: hidden;
+        cursor: pointer;
+        width: 405px;
+        color: #ffffff;
+        border-radius: 17px 17px 0 0;
+
+        .card {position: relative;
+            overflow: hidden;
+            img {
+                border-radius: 17px 17px 0 0;
+                display: block;
+                width: 100%;
+                transition: 0.7s;
+            }
+            img:hover {
+                opacity: 0.7;
+                transform: scale(1.074);
+            }
+            .card__about {
+                position: relative;
+                padding: 24px 32px;
+                border-radius: 0 0 17px 17px;
+                background: rgb(45, 43, 48);
+                .card__about__right {
+                    float: right;
+                }
+                p {
+                    display: inline;
+                    font-weight: 700;
+                    font-size: 17px;
+                    font-family: sans-serif;
+                    opacity: 0.87;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .card__about:hover {
+            background-color: #4d4b4b;
+        }
+        
+    }
+}.card__hr{
+    top: 37%;
+    left: 40%;
+    overflow: hidden;
+    position: absolute;
+    transition: 0.8s;
+    transform: translateY(800%);
+    color: gold;
+}
+
+.card__box:hover{  
+    .card__hr{
+        transform: translateY(0%);
+
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    // .card__home__card {
+    .home__menu__title {
+        flex-wrap: wrap;
+        h1{position: relative;
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    // .card__home__card {
+    //     padding: 0 70 !important;
+    // }
+    .card__box__flex {
+        flex-wrap: wrap;
+        display: flex;
+        .card__box {
+            width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title__main__text__left {
+        h1 {
+            font-size: 35px !important;
+        }
+    }
+}

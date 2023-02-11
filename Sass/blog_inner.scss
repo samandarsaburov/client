@@ -1,0 +1,124 @@
+@import "global.scss";
+@import"navbar.scss";
+@import"footer.scss";
+
+#store{
+    padding-top: 200px;
+    .store{
+        display: flex;
+        max-width: 500px;
+        margin: 0 auto;
+        align-items:center;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #FFFFFF;
+        .store__name{
+            margin:0 12px;
+            opacity: 0.87;
+        }
+        .store__date{
+            margin-left: 12px;
+            opacity: 0.6;
+        }
+
+    }
+    .store__title{
+        margin: 58px auto 40px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 1000px;
+        @media screen and(max-width: 600px){
+            &{
+                font-size: 32px;
+            }
+        }
+        @media screen and(max-width: 400px){
+            &{
+                font-size: 24px;
+            }
+        }
+        
+       
+    }
+    .store__glavni-img{
+        width: 100%;
+        margin: 40px 0;
+    }
+    .store__content{
+        padding: 0 200px;
+        .one{
+            font-weight: 700;
+            font-size: 32px;
+            opacity: 0.87;
+            @media screen and(max-width: 600px){
+                &{
+                    font-size: 24px;
+                }
+            }
+            @media screen and(max-width: 400px){
+                &{
+                    font-size: 20px;
+                }
+            }
+        }
+        .two{
+            opacity: 0.8;
+            font-weight: 700;
+            font-size: 20px;
+            @media screen and(max-width: 600px){
+                &{
+                    font-size: 18px;
+                }
+            }
+        }
+        @media screen and(max-width: 600px){
+            &{
+                padding: 100px;
+            }
+        }
+        @media screen and(max-width: 400px){
+            &{
+                padding: 20px;
+            }
+        }
+    }
+}
+.content__title{
+    margin: 40px 0 8px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    color: #FFFFFF;
+    max-width: 842px;
+   
+}
+.content__text-UX{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #B8B8B8;
+    margin-top: 16px;
+}
+.step__item{
+    padding: 2px 0;
+}
+.step__link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #B8B8B8;
+    &:hover{
+        color:orange;
+    }
+}

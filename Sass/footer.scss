@@ -1,0 +1,240 @@
+@import "global.scss";
+
+.footer{
+
+
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__img{
+            margin-top: 160px;
+            text-align: center;
+         }
+
+        &__menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 46px;
+
+            &__list{
+                padding: 0 15px;
+
+                &_link{
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                    &:hover{
+                        color: aqua;
+                    }
+                }
+            }
+         }
+
+
+    }
+
+}
+
+#footer{
+    margin-top: 32px;
+    // opacity: 0.07;
+    padding: 24px 0;
+    border-top: 1px solid #ab8f8f;
+    border-bottom: 1px solid #ab8f8f ;
+}
+
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &_list{
+
+        &_link{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: #B8B8B8;
+            &:hover{
+                color: aqua;
+            }
+        }
+
+        &__{
+            padding: 0   12px;
+            
+            
+      
+        }
+ }
+}
+
+
+
+
+@media screen and (max-width: 673px) {
+
+    .footer__top__menu{
+        display: flex;
+        flex-direction: column;
+
+        &__list{
+            padding: 5px 0;
+        }   
+    }
+
+    .footer__bottom{
+        display: flex;
+        flex-direction: column;
+        &_list{
+            padding-top: 20px;
+            
+        }
+        
+    }
+
+}
+
+.maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+    &__left{
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-right: 160px;
+
+       &_top_theme{
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+       }
+
+       &_top_text{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #B8B8B8;
+       }
+
+    }
+
+
+    &__left_right{
+        margin-top: 32px;
+
+        &_theme{
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+
+        &_text{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #B8B8B8;
+        }
+
+
+    }
+
+
+  &__left_bottom{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+
+    &_theme{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+
+    &_text{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #B8B8B8;
+    }
+
+
+  }  
+
+  &__right{
+    width: 60%;
+    a{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+  }
+}
+
+@media screen and (max-width:930px) {
+    .maps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        &__left{
+            width: 100%;
+            text-align: center;
+            padding: 0px;
+            padding-bottom: 20px;
+
+        }
+
+
+
+        &__right{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+
+            a{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
+
